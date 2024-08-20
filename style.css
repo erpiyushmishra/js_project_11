@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width:100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 2vw 5vw;
+}
+.navbar{
+    display:flex;
+    height:100px;
+    width:100%;
+
+}
+.navbar-title{
+    flex:1;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.navbar-button{
+    flex:1;
+    height:100%;
+    display: flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:1vw;
+    
+}
+.navbar-button button{
+    padding: 10px 1vw;
+    border: none;
+    padding: none;
+    border-radius: 2vw;
+    font-size: 1.1vw;
+    cursor: pointer;
+
+}
+.navbar-add{
+    background: green;
+    color: white;
+}
+.navbar-del{
+    background: coral;
+    color: white;
+}
+.main{
+    width:30vw;
+    display: flex;
+    flex-direction: column;
+    padding: max(5px, 1vw);
+    align-items: flex-start;
+    background:rgba(248, 250, 247, 0.822);
+    gap: 1vw;
+}
+.main span{
+    font-size: max(14px, 1.5vw)
+}
+.main-title{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+.main-question{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 5px;
+}
+.main-question input{
+    width: 100%;
+    height: 30px;
+    padding: .5vw;
+}
+.main-answer{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 5px;
+
+}
+.main-answer input{
+    width: 100%;
+    height: 30px;
+    padding: .5vw;
+
+}
+.main-buttons{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+.main-buttons button{
+    padding: 10px 1.5vw;
+    font-size: 1.1vw;
+}
+.content{
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+}
+.card{
+    width:100%;
+    height:200px;
+    padding:.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color:rgba(248, 250, 247, 0.822);
+    font-size:max(14px, 1.5vw);
+}
+.card_ans{
+    visibility:hidden;
+}
